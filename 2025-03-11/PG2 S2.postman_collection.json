@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "5f6d2c5f-fc90-46e3-b814-33c6b5514fa3",
+		"name": "PG2 S2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190066"
+	},
+	"item": [
+		{
+			"name": "Storefront",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"FirstName\" : \"Jefke 1\",\n    \"LastName\" : \"De Witte\",\n    \"DateOfBirth\" : \"2000-01-13\",\n    \"Email\" : \"jeffyboy2000@hotmail.com\",\n    \"TaxIdentificationNumber\" : null,\n    \"Addressline1\" : \"Kerkstraat 1\",\n    \"Addressline2\" : \"1337 Jeffegem\",\n    \"Addressline3\" : null,\n    \"Country\" : \"Belgium\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7109/api/customers",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/customers",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/customers/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"FirstName\" : \"Jefke Updated\",\n    \"LastName\" : \"De Witte\",\n    \"DateOfBirth\" : \"2000-01-13\",\n    \"Email\" : \"jeffyboy2000@hotmail.com\",\n    \"TaxIdentificationNumber\" : null,\n    \"Addressline1\" : \"Kerkstraat 1\",\n    \"Addressline2\" : \"1337 Jeffegem\",\n    \"Addressline3\" : null,\n    \"Country\" : \"Belgium\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7109/api/customers/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/customers/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\" : \"Drinkfles\",\n    \"Description\" : \"Deze drinkfles verandert je leven op zoveel manieren.\",\n    \"Price\" : 14.75,\n    \"AgeRating\" : 7,\n    \"StockCount\" : 12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7109/api/products",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Products",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/products",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/products/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\" : \"Drinkfles 2.0\",\n    \"Description\" : \"Deze drinkfles verandert je leven op zoveel manieren.\",\n    \"Price\" : 14.75,\n    \"AgeRating\" : 7,\n    \"StockCount\" : 12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7109/api/products/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/products/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Order",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Orders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Order",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7109/api/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7109",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Eerste Les",
+			"item": [
+				{
+					"name": "demoapi post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "jhfbh",
+								"value": "lkznk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    lkzefjkzefjk\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5191",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5191"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
