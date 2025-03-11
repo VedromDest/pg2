@@ -6,6 +6,7 @@ namespace Storefront.Api.Controllers;
 
 [ApiController]
 [Route("api/customers")]
+//TODO Dit moet een service ipv een repository aanroepen.
 public class CustomerController(ICustomerRepository repository) : ControllerBase
 {
     [HttpGet]

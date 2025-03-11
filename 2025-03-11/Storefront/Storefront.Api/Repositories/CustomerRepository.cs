@@ -2,6 +2,7 @@ using Storefront.Api.Contracts;
 
 namespace Storefront.Api.Repositories;
 
+// TODO deze klasse moet weg
 public class CustomerRepository : ICustomerRepository
 {
     private Dictionary<int, CustomerResponseContract> _customers = new();

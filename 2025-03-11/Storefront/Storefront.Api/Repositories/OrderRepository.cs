@@ -2,6 +2,8 @@ using Storefront.Api.Contracts;
 
 namespace Storefront.Api.Repositories;
 
+// TODO deze klasse moet weg
+
 public class OrderRepository: IOrderRepository
 {
     

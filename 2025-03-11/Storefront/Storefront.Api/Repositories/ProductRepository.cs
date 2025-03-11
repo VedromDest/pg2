@@ -2,6 +2,8 @@ using Storefront.Api.Contracts;
 
 namespace Storefront.Api.Repositories;
 
+// TODO deze klasse moet weg
+
 public class ProductRepository : IProductRepository
 {
     private Dictionary<int, ProductResponseContract> _products = new();
