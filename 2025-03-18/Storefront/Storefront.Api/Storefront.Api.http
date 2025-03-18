@@ -1,0 +1,11 @@
+@Storefront.Api_HostAddress = http://localhost:5290
+
+GET {{Storefront.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Storefront.Api_HostAddress}}/api/customers
+Accept: application/json
+
+###
