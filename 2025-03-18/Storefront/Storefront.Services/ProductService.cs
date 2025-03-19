@@ -52,7 +52,6 @@ namespace Storefront.Services
             entity.Price = (decimal)contract.Price;
             //...
 
-            storefrontContext.Update(entity);
             storefrontContext.SaveChanges();
         }
 

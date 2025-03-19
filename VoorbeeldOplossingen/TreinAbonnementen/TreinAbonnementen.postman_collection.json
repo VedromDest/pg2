@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "41efc7f6-0fe4-4f74-b8b9-54bf2c3a2405",
+		"name": "TreinAbonnementen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190066"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\" : \"Jefke 1\",\n    \"LastName\" : \"De Witte\",\n    \"Email\" : \"jeffyboy2000@hotmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7281/api/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscriptions",
+			"item": [
+				{
+					"name": "Subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CustomerId\" : 1,\n    \"Station1Id\" : 2,\n    \"Station2Id\" : 3,\n    \"ValidFrom\"  : \"2025-04-01T00:00:00Z\",\n    \"ValidTo\"    : \"2025-04-30T00:00:00Z\",\n    \"ComfortLevel\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7281/api/subscriptions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscriptions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/subscriptions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/subscriptions/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"subscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Station",
+			"item": [
+				{
+					"name": "Station",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\" : \"Erembodegem\",\n    \"HasWaitingRoom\" : false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7281/api/stations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/stations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Station",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7281/api/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Station",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\" : \"Erembodegem\",\n    \"HasWaitingRoom\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7281/api/stations/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7281",
+							"path": [
+								"api",
+								"stations",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
