@@ -1,0 +1,1 @@
+INSERT INTO Owners (FirstName, LastName, Email) VALUES (@FirstName, @LastName, @Email)
