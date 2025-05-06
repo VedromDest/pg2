@@ -52,3 +52,16 @@ VoorbeeldOplossingen/TreinAbonnementen/TreinAbonnementen/TreinAbonnementen.Api.C
 /.idea/.gitignore
 /.idea/indexLayout.xml
 /.idea/vcs.xml
+/2025-05-06/AsyncDemo/.idea
+
+/2025-05-06/AsyncDemo/SuperLibrary/obj
+/2025-05-06/AsyncDemo/SuperLibrary/bin
+/2025-05-06/AsyncDemo/AsyncDemo/obj
+/2025-05-06/AsyncDemo/AsyncDemo/bin
+/2025-05-06/AsyncDemo/SuperModel/obj
+/2025-05-06/AsyncDemo/SuperModel/bin
+
+/2025-05-06/AsyncParallelCursus/AsyncParallelCursus/obj
+/2025-05-06/AsyncParallelCursus/AsyncParallelCursus/bin
+
+/2025-05-06/AsyncParallelCursus/.idea
