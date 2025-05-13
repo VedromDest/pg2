@@ -1,0 +1,5 @@
+### Hello World
+GET https://localhost:7076
+
+### Get demo modellen
+GET https://localhost:7076/demomodellen

@@ -65,3 +65,9 @@ VoorbeeldOplossingen/TreinAbonnementen/TreinAbonnementen/TreinAbonnementen.Api.C
 /2025-05-06/AsyncParallelCursus/AsyncParallelCursus/bin
 
 /2025-05-06/AsyncParallelCursus/.idea
+
+/2025-05-13/**/bin
+/2025-05-13/**/obj
+**/.idea
+**/.DS_Store
+/2025-05-13/**/*.Development.json
