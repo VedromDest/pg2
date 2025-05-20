@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using MongoWebApi;
 
@@ -9,6 +10,13 @@ builder.Services.AddMongoDB<LesDemoDbContext>(
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
-app.MapGet("/demomodellen", (LesDemoDbContext ctx) => ctx.DemoModels);
+app.MapGet("/demomodellen", (
+        LesDemoDbContext ctx,
+        [FromQuery] int? greaterThanNumber,
+        [FromQuery] string? containsText) => 
+    ctx.DemoModels.Where(m => 
+        (greaterThanNumber == null || m.MijnVeldNumber > greaterThanNumber) 
+        && (containsText == null || m.MijnVeldText.Contains(containsText)))
+    );
 
 app.Run();

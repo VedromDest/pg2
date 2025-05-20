@@ -3,3 +3,12 @@ GET https://localhost:7076
 
 ### Get demo modellen
 GET https://localhost:7076/demomodellen
+
+### Get demo modellen
+GET https://localhost:7076/demomodellen?greaterThanNumber=12
+
+### Get demo modellen
+GET https://localhost:7076/demomodellen?containsText=hallo
+
+### Get demo modellen
+GET https://localhost:7076/demomodellen?containsText=hallo&greaterThanNumber=12
