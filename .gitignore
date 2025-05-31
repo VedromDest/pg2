@@ -71,3 +71,6 @@ VoorbeeldOplossingen/TreinAbonnementen/TreinAbonnementen/TreinAbonnementen.Api.C
 **/.idea
 **/.DS_Store
 /2025-05-13/**/*.Development.json
+
+**/bin
+**/obj

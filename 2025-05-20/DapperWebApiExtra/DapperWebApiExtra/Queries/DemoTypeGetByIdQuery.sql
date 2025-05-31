@@ -1,0 +1,1 @@
+SELECT Id, Blabla FROM DemoTypes WHERE Id = @Id;

@@ -1,0 +1,16 @@
+### - GetAll
+GET https://localhost:7286/demotypes
+Accept: application/json
+
+### - Get
+GET https://localhost:7286/demotypes/1
+Accept: application/json
+
+### - Post
+POST https://localhost:7286/demotypes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Blabla": "kleznfklezfzlkfkzl"
+}
