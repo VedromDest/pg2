@@ -8,6 +8,8 @@ namespace WebShop.Controllers;
 [Route("customers")]
 public class CustomerController(CustomerRepository repository) : ControllerBase
 {
+    //TODO Create CustomerService and refactor this controller
+    
     [HttpPost]
     public IActionResult CreateCustomer(CustomerRequestContract customer)
     {
