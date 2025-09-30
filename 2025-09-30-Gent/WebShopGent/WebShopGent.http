@@ -1,6 +1,0 @@
-@WebShopGent_HostAddress = http://localhost:5261
-
-GET {{WebShopGent_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
