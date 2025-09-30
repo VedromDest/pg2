@@ -6,7 +6,7 @@ namespace WebShopGent.Controllers;
 
 [ApiController]
 [Route("customers")]
-public class CustomerController(CustomerRepository customerRepository) : ControllerBase
+public class CustomerController(ICustomerRepository customerRepository) : ControllerBase
 {
     [HttpPost]
     public IActionResult CreateCustomer(CustomerRequestContract customerToCreate)

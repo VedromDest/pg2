@@ -6,7 +6,17 @@ using WebShopGent.Contracts;
 // Dit is niet inherent beter of slechter, gewoon een alternatief.
 // In de praktijk kies je voor een uniforme aanpak per solution.
 
-public class ProductRepository
+public interface IProductRepository
+{
+    IEnumerable<ProductResponseContract> GetAll();
+    ProductResponseContract? Get(Guid id);
+    void Delete(Guid id);
+    ProductResponseContract Create(ProductRequestContract product);
+    void Update(ProductRequestContract product, Guid id);
+
+}
+
+public class ProductRepository : IProductRepository
 {
     
     private readonly Dictionary<Guid, ProductResponseContract> _products = new();

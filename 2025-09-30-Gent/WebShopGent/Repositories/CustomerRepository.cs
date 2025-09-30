@@ -2,7 +2,19 @@ using WebShopGent.Contracts;
 
 namespace WebShopGent.Repositories;
 
-public class CustomerRepository
+public interface ICustomerRepository
+{
+    CustomerResponseContract SaveCustomer(CustomerRequestContract customerRequestContract);
+    CustomerResponseContract? GetCustomer(Guid id);
+    List<CustomerResponseContract> GetAllCustomers();
+
+    CustomerResponseContract UpdateCustomer(CustomerRequestContract customerRequestContract,
+        Guid customerId);
+
+    void Delete(Guid id);
+}
+
+public class CustomerRepository : ICustomerRepository
 {
     private readonly Dictionary<Guid, CustomerResponseContract> _customers = new();
     
