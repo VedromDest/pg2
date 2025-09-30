@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d4c1d6f3-97a7-43e9-8b08-21f11c502453",
+		"name": "2025-2026-s1-pg2-gent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190066"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": []
+		},
+		{
+			"name": "Post Demo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5221",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5221"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5261/weatherforecast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5261",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FirstName\": \"Jeffina\",\n    \"LastName\" : \"Permentier\",\n    \"Email\" : \"jeffinator@jeffmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5261/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5261",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5261/customers/b6461f9e-e85a-46e7-8c10-960120e83553",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5261",
+					"path": [
+						"customers",
+						"b6461f9e-e85a-46e7-8c10-960120e83553"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
