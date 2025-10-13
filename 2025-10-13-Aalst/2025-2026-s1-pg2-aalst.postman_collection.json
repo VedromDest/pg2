@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "6e18006f-da0d-49ce-9aba-bacc7b4b32ca",
+		"name": "2025-2026-s1-pg2-aalst",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190066"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\" : \"Jeffina FR\",\n    \"LastName\" : \"Achternaam\",\n    \"Email\" : \"jeffinator@jeffmail.com\",\n    \"Country\" : \"FR\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7168/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7168/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7168/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7168/customers/eaf9df63-b9e6-4aa2-b9c2-914ee84bc11b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"customers",
+								"eaf9df63-b9e6-4aa2-b9c2-914ee84bc11b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\" : \"JefkeUpdated\",\n    \"Email\" : \"jeffinatorupdated@jeffmail.com\",\n    \"Country\" : \"NL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7168/customers/c538d4ce-107a-45dd-93e7-9410e07e5936",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"customers",
+								"c538d4ce-107a-45dd-93e7-9410e07e5936"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\" : \"Super Product 7000\",\n    \"Description\" : \"Dit is een super product\",\n    \"Price\" : 420.69\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7168/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CustomerId\" : \"fb9fab94-cf08-4050-839a-0c332b9aff18\",\n    \"Products\" : [\n        {\n            \"ProductId\" : \"6676c379-0b04-4f6f-97bb-6286e25cb590\",\n            \"Quantity\" : 7\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7168/orders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7168",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
