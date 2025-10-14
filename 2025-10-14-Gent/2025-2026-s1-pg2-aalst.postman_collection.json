@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "d4c1d6f3-97a7-43e9-8b08-21f11c502453",
+		"name": "2025-2026-s1-pg2-gent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190066"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Jeff rewind\",\n    \"LastName\" : \"Permentier\",\n    \"Email\" : \"jeffinator@jeffmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5261/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Jefke Updated\",\n    \"LastName\" : \"Permentier Updated\",\n    \"Email\" : \"jeffinator@jeffmail.com Updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5261/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"customers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CustomerId\": \"9858ae80-2cb9-4067-bd4c-31c2a648961d\",\n    \"Products\" : [\n        {\n            \"ProductId\" : \"3a972b81-b613-43c1-ac2a-47d9769d38be\",\n            \"Quantity\" : 9\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5261/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/orders/52288345-6f31-44f4-8aeb-3375b0d1aa0a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"orders",
+								"52288345-6f31-44f4-8aeb-3375b0d1aa0a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Zetel\",\n    \"Description\" : \"Zacht en groot\",\n    \"Price\" : 2000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5261/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Kruk Anders\",\n    \"Description\" : \"Ronde Stoel\",\n    \"Price\" : 137\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5261/products/c2009d19-00a5-490d-9dba-ae01f2297370",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"products",
+								"c2009d19-00a5-490d-9dba-ae01f2297370"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/products/695ed648-2030-47d6-a7ef-8a17cfe3c8a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"products",
+								"695ed648-2030-47d6-a7ef-8a17cfe3c8a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5261/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5261",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Demo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5221",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5221"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5261/weatherforecast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5261",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

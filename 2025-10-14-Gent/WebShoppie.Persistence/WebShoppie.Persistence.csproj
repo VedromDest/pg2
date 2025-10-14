@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OrderRepository.cs" />
+    <Compile Remove="ProductRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="OrderRepository.cs" />
+    <None Include="ProductRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebShoppie.Persistence.Entities\WebShoppie.Persistence.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
