@@ -53,7 +53,7 @@ namespace WebShoppie.Domain.Services
                 var updatedEntity = repository.UpdateCustomer(customerModel.AsEntity());
                 return updatedEntity.AsModel().AsContract();
             }
-            catch (CustomerNotFoundException cne)
+            catch (EntityNotFoundException cne)
             {
                 return null;
             }

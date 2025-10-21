@@ -51,6 +51,7 @@ public class CustomerController(ICustomerService service) : ControllerBase
         {
             service.DeleteCustomer(customerId);
         }
+        // DB exceptions opvangen in api layer doorprikt abstracties van de lagen, beter in domein.
         catch (EntityNotFoundException cnfe)
         {
             return BadRequest(new ProblemDetails
