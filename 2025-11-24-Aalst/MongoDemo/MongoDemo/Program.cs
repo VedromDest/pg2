@@ -4,12 +4,20 @@ using MongoDB.Driver;
 using MongoDemo;
 
 Console.WriteLine("Hello, World!");
-
-// TODO unhappy path
-// TODO waarom infert Rider soms ? wanneer dit duidelijk verkeerd is? Jippe zegt altijd ? bij var.
 var dbClient = new MongoClient("mongodb://localhost:27017");
-IMongoDatabase db = dbClient.GetDatabase("pg2aalst");
-var myCollection = db.GetCollection<DemoModel>("testcollection");
+
+// Referentie naar bestaande database maken.
+// We controleren dit om er voor te zorgen dat er niet impliciet database gemaakt worden.
+const string databaseName = "pg2aalst"; 
+if (!dbClient.ListDatabaseNames().ToList().Contains(databaseName))
+    throw new Exception($"Database {databaseName} bestaat niet");
+IMongoDatabase db = dbClient.GetDatabase(databaseName);
+
+// Referentie naar bestaande collection maken
+const string collectionName = "testcollection"; 
+if (!db.ListCollectionNames().ToList().Contains(collectionName))
+    throw new Exception($"Collection {collectionName} bestaat niet");
+var myCollection = db.GetCollection<DemoModel>(collectionName);
 
 // INSERT
 var toCreate = new DemoModel
