@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebShoppie.DataModel.Entities;
 
+[Index(nameof(Email), IsUnique = true)]
 public class Customer
 {
     public long CustomerId { get; set; }
@@ -12,6 +14,7 @@ public class Customer
     [MaxLength(50)]
     public required string LastName { get; set; }
 
+    // Steeds UTC tijd meegeven OF [Column(TypeName = "timestamp without time zone")] 
     public required DateTime DateOfBirth { get; set; }
 
     [MaxLength(100)] [EmailAddress]
