@@ -1,0 +1,10 @@
+> Run commando ter hoogte van .sln in directory structuur.
+dotnet ef migrations add InitialCreate --startup-project WebShoppie.Api --project WebShoppie.Persistence.DataModel --output-dir Migrations
+
+> Manueel uitvoeren op db
+dotnet ef database update --startup-project WebShoppie.Api --project WebShoppie.Persistence.DataModel
+
+> Automatisch uitvoeren op db at runtime in Program.cs
+using var dbScope = app.Services.CreateScope();
+var db = dbScope.ServiceProvider.GetRequiredService<WebShoppieDbContext>();
+db.Database.Migrate();
